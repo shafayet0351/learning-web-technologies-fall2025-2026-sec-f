@@ -55,6 +55,9 @@
 
                 let uError = document.getElementById('uError');
                 let pError = document.getElementById('pError');
+                uError.innerHTML = "";
+                pError.innerHTML = "";
+
 
                 if(username == ""){
                     uError.innerHTML = "please type username first!";
@@ -64,9 +67,7 @@
                     pError.style.color = 'red';
                 } else {
                     document.getElementById('head').innerHTML = username;
-                    uError.innerHTML = "";
-                    pError.innerHTML = "";
-                }
+                                    }
                 //let head = document.getElementById('head');
                 //head.innerHTML = username;
             }
